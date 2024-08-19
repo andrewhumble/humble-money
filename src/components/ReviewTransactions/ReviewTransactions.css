@@ -1,0 +1,38 @@
+/* ReviewTransactions.css */
+
+.review-transactions-card {
+    max-width: 600px;
+    margin: auto;
+}
+
+.review-transactions-title {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.no-transactions-text {
+    font-size: 14px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-container .ant-checkbox-inner {
+    transition: all 0.1s linear;
+}
+
+.checkbox-container .ant-checkbox-checked .ant-checkbox-inner {
+    transition: all 0.1s linear;
+}
+
+.checkbox-container .ant-checkbox-checked .ant-checkbox-inner::after {
+    animation: antCheckboxEffect 0.1s linear;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+    color: gray;
+}

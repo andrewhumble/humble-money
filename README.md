@@ -68,3 +68,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## GPT Nodes
+
+### Front-End Dir Structure
+
+/src
+  /components       # Reusable UI components
+  /pages            # Page-level components (Dashboard, Budget Overview, etc.)
+  /hooks            # Custom React hooks (Plaid data fetch, budget calculations)
+  /services         # API services (communicating with the backend)
+  /context          # React Context for global state management
+  /styles           # Styling (CSS/SCSS files or styled-components)
+  /utils            # Helper functions and constants
+  /assets           # Static assets (images, icons, etc.)
+  App.js            # Main application entry point
+  index.js          # ReactDOM render and app initialization
+
+### Back-End Dir Structure
+
+/src
+  /controllers      # Request handlers (Plaid controller, budget controller)
+  /routes           # Route definitions and API endpoints
+  /services         # Plaid service integration, transaction handling
+  /middleware       # Custom middlewares (auth, error handling)
+  /models           # Database models (if using ORM like Sequelize/Mongoose)
+  /config           # Config files (environment variables, Plaid keys, etc.)
+  /utils            # Utility functions (data formatting, logging)
+  app.js            # Express app initialization
+  server.js         # Server setup and configuration
