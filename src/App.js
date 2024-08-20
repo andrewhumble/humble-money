@@ -9,8 +9,7 @@ function App() {
     <ConfigProvider
       theme={{
         token: {
-          fontSizeHeading3: 18, // Customize your global typography settings
-          // other token configurations can go here
+          fontSizeHeading3: 14,
         },
       }}
     >
